@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import OptionSize from '../OptionSize/OptionSize';
 import OptionColor from '../OptionColor/OptionColor';
 
-const ProductForm = ({ title, getPrice, currentSize, setCurrentSize, currentColor, setCurrentColor, colors, sizes }) => {
+const ProductForm = ({ title, price, currentSize, setCurrentSize, currentColor, setCurrentColor, colors, sizes }) => {
     
 
   return (
@@ -15,7 +15,7 @@ const ProductForm = ({ title, getPrice, currentSize, setCurrentSize, currentColo
               event.preventDefault();
               console.log("===Product Summary===");
               console.log("Name:", title);
-              console.log("Price:", getPrice());
+              console.log("Price:", price);
               console.log("Size:", currentSize);
               console.log("Color:", currentColor);
             }}/>
